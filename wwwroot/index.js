@@ -1,5 +1,7 @@
 ﻿const uri = 'api/UclaEvent';
+
 let UclaEvents = null;
+
 function getCount(data) {
     const el = $('#counter');
     let name = 'Event';
@@ -31,8 +33,8 @@ function getData() {
                     '<td>' + item.startDate + '</td>' +
                     '<td>' + item.location + '</td>' +
                     '<td>' + item.description + '</td>' +
-                    '<td><button onclick="editItem(' + item.id + ')" class="btn btn-info">Edit</button></td>' +
-                    '<td><button onclick="deleteItem(' + item.id + ')" class="btn btn-danger">Delete</button></td>' +
+                    '<td><button onclick="editUclaEvent(' + item.id + ')" class="btn btn-info">Edit</button></td>' +
+                    '<td><button onclick="deleteUclaEvent(' + item.id + ')" class="btn btn-danger">Delete</button></td>' +
                     '</tr>').appendTo($('#UclaEvents'));
             });
 
@@ -90,21 +92,27 @@ function updateUclaEvent() {
         success: function (result) {
             toggleEdit(false);
             getData();
+            $('#edit-name').val('');
+            $('#edit-startDate').val();
+            $('#edit-location').val('');
+            $('#edit-description').val('');                
         }
     });
 }
 
-function deleteItem(id) {
-    $.ajax({
-        url: uri + '/' + id,
-        type: 'DELETE',
-        success: function (result) {
-            getData();
-        }
-    });
+function deleteUclaEvent(id) {
+    if (confirm('Are you sure you want to delete ' + id + '?')) {
+        $.ajax({
+            url: uri + '/' + id,
+            type: 'DELETE',
+            success: function (result) {
+                getData();
+            }
+        });
+    }
 }
 
-function editItem(id) {
+function editUclaEvent(id) {
     $.each(UclaEvents, function (key, item) {
         if (item.id === id) {
             $('#edit-name').val(item.name);
