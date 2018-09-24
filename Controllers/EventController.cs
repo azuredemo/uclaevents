@@ -5,16 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using UclaEventApi.Models;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 /**
  * Author: RajatL
  * Date: September 23, 2018
  * 
- * UclaEventController implements RESTful methods to manage Events.
- * 
- * 
- * 
+ * UclaEventController implements RESTful methods to manage Events CURD operations.
+ *  * 
  */ 
 namespace UclaEventApi.Controllers
 {
@@ -25,9 +21,14 @@ namespace UclaEventApi.Controllers
     [ApiController]
     public class UclaEventController : ControllerBase
     {
-
+        /**
+         * DBContext reference
+         */ 
         private readonly UclaEventContext _context;
 
+        /**
+         * Constructor: Initilize a newly created object.
+         */
         public UclaEventController(UclaEventContext context)
         {
             _context = context;
@@ -56,6 +57,9 @@ namespace UclaEventApi.Controllers
             return item;
         }
 
+        /**
+         *  Create, returns IActionResult after creating a new DB Event.
+         */
         [HttpPost]
         public IActionResult Create(UclaEventItem item)
         {
@@ -67,6 +71,9 @@ namespace UclaEventApi.Controllers
             return CreatedAtRoute("GetUclaEvent", new { id = item.Id }, item);
         }
 
+        /**
+         *  Update, returns IActionResult after updating an existing Event in DB with updated values.
+         */
         [HttpPut("{id}")]
         public IActionResult Update(long id, UclaEventItem item)
         {
@@ -88,6 +95,9 @@ namespace UclaEventApi.Controllers
             //return CreatedAtRoute("GetUclaEvent", new { id = item.Id }, item);
         }
 
+        /**
+         *  Delete, returns IActionResult after deleting an existing Event in DB with provided id value.
+         */
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {

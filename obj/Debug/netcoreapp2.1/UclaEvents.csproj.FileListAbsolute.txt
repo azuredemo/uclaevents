@@ -11,4 +11,3 @@
 /Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.RazorTargetAssemblyInfo.cache
 /Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.dll
 /Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.pdb
-/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.csprojAssemblyReference.cache

@@ -1,10 +1,18 @@
-﻿<!DOCTYPE html>
+﻿<!--
+ * Author: RajatL
+ * Date: September 23, 2018
+ *
+ * UX to test CURD operations exposed by .NET CORE Web API.
+ *
+ */
+-->
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>UCLA Events</title>
     <style>
-        input[type='submit'], button, [aria-label] {
+        input[type='submit'], button {
             cursor: pointer;
         }
 
@@ -16,7 +24,6 @@
             float: left;
             padding-right: 5px;
         }
-        
     </style>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="datetime/bootstrap-datetimepicker.min.css">
@@ -27,7 +34,7 @@
     <script src="datetime/respond.min.js"></script>
     <script src="datetime/bootstrap.min.js"></script>
     <script src="datetime/bootstrap-datetimepicker.min.js"></script>
-    <script src="site.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="container">
@@ -36,6 +43,7 @@
                 <div class="page-header">
                     <h3>UCLA EVENTS (<span id="counter"></span>)</h3>
                     <button type="button" class="btn btn-primary" onclick="toggleAdd()">Add New Event</button>
+                    <!-- ADD NEW EVENT -->
                     <div id="add-block" style="display:none;">
                         <form action="javascript:void(0);" method="POST" onsubmit="addUclaEvent()">
                             <div display="display:inline;" class="input-append date" id="datetimepicker1">
@@ -51,6 +59,7 @@
                             <input type="submit" value="Add" class="btn btn-primary">
                         </form>
                     </div>
+                    <!-- EDIT EXISTING EVENT -->
                     <div id="edit-block" style="display:none;">
                         <form action="javascript:void(0);" method="PUT" onsubmit="updateUclaEvent()">
                             <input type="hidden" id="edit-id">
@@ -74,7 +83,7 @@
                         <div class="col-md-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                        <!-- TODO -->
+                                    <!-- TODO -->
                                 </div>
                                 <div class="panel-body">
                                     <table class="table">

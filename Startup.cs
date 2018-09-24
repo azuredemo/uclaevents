@@ -29,7 +29,9 @@ namespace UclaEventApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-        
+            /**
+             * Using the in-memory data provider
+             */
             services.AddDbContext<UclaEventContext>(opt => opt.UseInMemoryDatabase("UclaEventList"));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
@@ -49,7 +51,13 @@ namespace UclaEventApi
 
             app.UseHttpsRedirection();
 
+            /**
+             * index.html
+             */
             app.UseDefaultFiles();
+            /**
+             *  Static resource files (e.g. wwwroot/)
+             */
             app.UseStaticFiles();
             app.UseMvc();
         }

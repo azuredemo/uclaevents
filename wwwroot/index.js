@@ -108,7 +108,8 @@ function deleteUclaEvent(id) {
             success: function (result) {
                 getData();
             }
-        });
+         });
+        toggleEdit(false);
     }
 }
 
