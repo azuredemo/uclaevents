@@ -1,0 +1,14 @@
+/Users/rajatl/Projects/UclaEvents/bin/Debug/netcoreapp2.1/UclaEvents.deps.json
+/Users/rajatl/Projects/UclaEvents/bin/Debug/netcoreapp2.1/UclaEvents.runtimeconfig.json
+/Users/rajatl/Projects/UclaEvents/bin/Debug/netcoreapp2.1/UclaEvents.runtimeconfig.dev.json
+/Users/rajatl/Projects/UclaEvents/bin/Debug/netcoreapp2.1/UclaEvents.dll
+/Users/rajatl/Projects/UclaEvents/bin/Debug/netcoreapp2.1/UclaEvents.pdb
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.csproj.CoreCompileInputs.cache
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.RazorAssemblyInfo.cache
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.RazorAssemblyInfo.cs
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.AssemblyInfoInputs.cache
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.AssemblyInfo.cs
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.RazorTargetAssemblyInfo.cache
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.dll
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.pdb
+/Users/rajatl/Projects/UclaEvents/obj/Debug/netcoreapp2.1/UclaEvents.csprojAssemblyReference.cache

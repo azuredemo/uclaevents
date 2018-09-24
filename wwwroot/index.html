@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UCLA Events</title>
+    <style>
+        input[type='submit'], button, [aria-label] {
+            cursor: pointer;
+        }
+
+        #spoiler {
+            display: none;
+        }
+
+        .date {
+            float: left;
+            padding-right: 5px;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="datetime/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="datetime/bootstrap.css">
+    <link rel="stylesheet" href="datetime/bootstrap-responsive.css">
+    <script src="datetime/jquery.min.js"></script>
+    <script src="datetime/index.js"></script>
+    <script src="datetime/respond.min.js"></script>
+    <script src="datetime/bootstrap.min.js"></script>
+    <script src="datetime/bootstrap-datetimepicker.min.js"></script>
+    <script src="site.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="page-header">
+                    <h3>UCLA EVENTS (<span id="counter"></span>)</h3>
+                    <button type="button" class="btn btn-primary" onclick="toggleAdd()">Add New Event</button>
+                    <div id="add-block" style="display:none;">
+                        <form action="javascript:void(0);" method="POST" onsubmit="addUclaEvent()">
+                            <div display="display:inline;" class="input-append date" id="datetimepicker1">
+                                <input data-format="dd/MM/yyyy hh:mm" type="text" id="add-startDate">
+                                <span id="span2" class="add-on">
+                                    <i id="img1" data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar">
+                                    </i>
+                                </span>
+                            </div>
+                            <input type="text" id="add-name" placeholder="New Event Name">
+                            <input type="text" id="add-location" placeholder="Event Location">
+                            <input type="text" id="add-description" placeholder="Event Description">
+                            <input type="submit" value="Add" class="btn btn-primary">
+                        </form>
+                    </div>
+                    <div id="edit-block" style="display:none;">
+                        <form action="javascript:void(0);" method="PUT" onsubmit="updateUclaEvent()">
+                            <input type="hidden" id="edit-id">
+                            <div class="input-append date" id="datetimepicker2">
+                                <input data-format="dd/MM/yyyy hh:mm" type="text" id="edit-startDate">
+                                <span id="span2" class="add-on">
+                                    <i id="img1" data-date-icon="icon-calendar" data-time-icon="icon-time" class="icon-calendar">
+                                    </i>
+                                </span>
+                            </div>
+                            <input type="text" id="edit-name">
+                            <input type="text" id="edit-location">
+                            <input type="text" id="edit-description">
+                            <input type="submit" value="Update" class="btn btn-info">
+                            <input type="button" value="Close" class="btn btn-warning" onclick="toggleEdit(false);">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <section class="main-section">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                        <!-- TODO -->
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Id</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">StartDate</th>
+                                                <th scope="col">Location</th>
+                                                <th scope="col">Description</th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        <thead>
+                                        <tbody id="UclaEvents"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="panel-body">
+                            <!-- TODO -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script>
+        $(function() {
+                $('.date').datetimepicker({
+                  language: 'en'
+                });
+        });
+        </script>
+</body>
+</html>

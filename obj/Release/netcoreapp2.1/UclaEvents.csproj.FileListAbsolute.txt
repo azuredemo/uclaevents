@@ -1,0 +1,13 @@
+/Users/rajatl/Projects/TodoApi/TodoApi/bin/Release/netcoreapp2.1/UclaEvents.deps.json
+/Users/rajatl/Projects/TodoApi/TodoApi/bin/Release/netcoreapp2.1/UclaEvents.runtimeconfig.json
+/Users/rajatl/Projects/TodoApi/TodoApi/bin/Release/netcoreapp2.1/UclaEvents.runtimeconfig.dev.json
+/Users/rajatl/Projects/TodoApi/TodoApi/bin/Release/netcoreapp2.1/UclaEvents.dll
+/Users/rajatl/Projects/TodoApi/TodoApi/bin/Release/netcoreapp2.1/UclaEvents.pdb
+/Users/rajatl/Projects/TodoApi/TodoApi/obj/Release/netcoreapp2.1/UclaEvents.csproj.CoreCompileInputs.cache
+/Users/rajatl/Projects/TodoApi/TodoApi/obj/Release/netcoreapp2.1/UclaEvents.RazorAssemblyInfo.cache
+/Users/rajatl/Projects/TodoApi/TodoApi/obj/Release/netcoreapp2.1/UclaEvents.RazorAssemblyInfo.cs
+/Users/rajatl/Projects/TodoApi/TodoApi/obj/Release/netcoreapp2.1/UclaEvents.AssemblyInfoInputs.cache
+/Users/rajatl/Projects/TodoApi/TodoApi/obj/Release/netcoreapp2.1/UclaEvents.AssemblyInfo.cs
+/Users/rajatl/Projects/TodoApi/TodoApi/obj/Release/netcoreapp2.1/UclaEvents.RazorTargetAssemblyInfo.cache
+/Users/rajatl/Projects/TodoApi/TodoApi/obj/Release/netcoreapp2.1/UclaEvents.dll
+/Users/rajatl/Projects/TodoApi/TodoApi/obj/Release/netcoreapp2.1/UclaEvents.pdb

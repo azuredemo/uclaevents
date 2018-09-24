@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{756C36A2-6E83-487D-9D33-462ED9887168}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/jquery.datetimepicker.js">
+    <Files>
+      <File FileName="Startup.cs" Line="14" Column="1" />
+      <File FileName="wwwroot/index.html" Line="103" Column="8" />
+      <File FileName="wwwroot/site.js" Line="37" Column="16" />
+      <File FileName="wwwroot/jquery.datetimepicker.js" Line="51" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UclaEvents PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
