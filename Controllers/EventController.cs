@@ -87,6 +87,7 @@ namespace UclaEventApi.Controllers
             UclaEvent.name = item.name;
             UclaEvent.location = item.location;
             UclaEvent.description = item.description;
+            UclaEvent.startDate = item.startDate;
 
             _context.UclaEventItems.Update(UclaEvent);
             _context.SaveChanges();
