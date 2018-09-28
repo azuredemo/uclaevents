@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "46455ff9-3cff-4f5d-a617-093648348d49",
+		"name": "UclaEvent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-UclaEvent",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://uclaevents.azurewebsites.net/api/UclaEvent",
+					"protocol": "https",
+					"host": [
+						"uclaevents",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"UclaEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-UclaEvent",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n  {\n    \"name\": \"MyNewEventTODO5\",\n    \"startDate\": \"09/25/2018 10:00\",\n    \"location\": \"TEST\",\n    \"description\": \"TEST\"\n  }"
+				},
+				"url": {
+					"raw": "https://uclaevents.azurewebsites.net/api/UclaEvent",
+					"protocol": "https",
+					"host": [
+						"uclaevents",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"UclaEvent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-UclaEvent",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n\t\"name\": \"TEST2-name\",\n\t\"startDate\": \"09/25/2019 10:00\",\n\t\"location\": \"TEST2-loc\",\n    \"description\": \"TEST2-desc\"\n}"
+				},
+				"url": {
+					"raw": "https://uclaevents.azurewebsites.net/api/UclaEvent/1",
+					"protocol": "https",
+					"host": [
+						"uclaevents",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"UclaEvent",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-UclaEvent",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://uclaevents.azurewebsites.net/api/UclaEvent/1",
+					"protocol": "https",
+					"host": [
+						"uclaevents",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"UclaEvent",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
