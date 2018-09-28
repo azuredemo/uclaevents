@@ -11,4 +11,5 @@
 -- GET, POST, PUT, DELETE
 
 # Known Issues with current Repo:
--- [!TODO:] Event startDate doesn't update on PUT mode.
+~~[!TODO:] Event startDate doesn't update on PUT mode.~~ _Friday Sept 28, 2018_
+
